@@ -6,6 +6,7 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #000D34;
+  background-color: #F4F7F9;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -88,23 +89,49 @@ button {
 }
 
 h1,
-h2,
 .title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 65px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  text-align: center;
 }
-
+h2,
+.title-2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  text-align: center;
+}
 h3,
 .title-3 {
   font-weight: bold;
   font-size: 36px;
   line-height: 49px;
 }
-
 h4,
 .title-4 {
   font-weight: 600;
   font-size: 20px;
   line-height: 27px;
+}
+.title-line {
+  position: relative;
+  text-align: left;
+  padding-bottom: 19px;
+  margin-bottom: 26px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 34px;
+    height: 4px;
+    background: #2BAAE1;
+  }
+}
+.swiper-container {
+  overflow: hidden;
+  box-sizing: border-box;
 }
