@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Title</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <svg style="display:none">
+    <symbol id="icon-dropdown">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M8.78733 1.17224L5.01627 4.79917C4.73272 5.06694 4.27344 5.06694 3.98989 4.79917C3.97291 4.78307 3.96692 4.76294 3.95195 4.74582L0.220821 1.15613C-0.0627323 0.887357 -0.0787072 0.468593 0.204846 0.200825C0.4884 -0.0669418 0.947677 -0.0669418 1.23123 0.200825L4.49709 3.35061L7.76095 0.202839C8.0445 -0.0649285 8.50378 -0.0649285 8.78733 0.202839C9.07089 0.470606 9.07089 0.90447 8.78733 1.17224Z"/>
+    </symbol>
+  </svg>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper header__wrap">
+        <div class="header__location">
+          <address>Центральный офис: Москва, ул. Арбат, 35, оф. 317</address>
+          <div class="header__mail"><span>Email: </span><a href="mailto:alexesis@bk.ru">alexesis@bk.ru</a></div>
+          <div class="header__city">
+            <span>Ваш город: </span>
+            <a href="#" class="header__choice">Москва</a>
+            <button type="button" class="header__arrow">
+              <svg width="9" height="5" viewBox="0 0 9 5" xmlns="http://www.w3.org/2000/svg">
+                <use href="#icon-dropdown"></use>
+              </svg>
+            </button>
+            <ul class="header__list">
+              <li><a href="#">City 1</a></li>
+              <li><a href="#">City 2</a></li>
+              <li><a href="#">City 3</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__user">
+          <span>по России бесплатно</span>
+          <a href="tel:+74951203585" class="header__phone">+7 495 120-35-85,</a>
+          <a href="tel:+78003336518" class="header__phone">+7 800 333-65-18</a>
+          <a href="#" class="header__call">обратный звонок</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="wrapper header__wrap">
+        <div class="logo">
+          <img src="img/images/logo.svg" alt="Logo">
+        </div>
+        <div class="menu">
+          <button type="button" class="menu__close"></button>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О компании</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">
+                <span>Услуги</span>
+                <button type="button" class="menu__arrow">
+                  <svg width="9" height="5" viewBox="0 0 9 5" xmlns="http://www.w3.org/2000/svg">
+                    <use href="#icon-dropdown"></use>
+                  </svg>
+                </button>
+              </a>
+              <div class="menu__drop">
+                <ul class="menu__sublist">
+                  <li class="menu__subitem"><a href="#">Аттестация и аккредитация лабораторий</a></li>
+                  <li class="menu__subitem"><a href="#">Аттестация персонала</a></li>
+                  <li class="menu__subitem"><a href="#">Повышение квалификации и обучение</a></li>
+                  <li class="menu__subitem"><a href="#">Лицензирование</a></li>
+                  <li class="menu__subitem"><a href="#">Вступление в СРО</a></li>
+                  <li class="menu__subitem"><a href="#">Сертификация</a></li>
+                  <li class="menu__subitem"><a href="#">Разработка паспорта опасного производственного объекта</a></li>
+                  <li class="menu__subitem"><a href="#">ПЛАРН</a></li>
+                  <li class="menu__subitem"><a href="#">Энергоаудит</a></li>
+                  <li class="menu__subitem"><a href="#">Специальная оценка условий труда «СОУТ»</a></li>
+                  <li class="menu__subitem"><a href="#">Промышленный консалтинг</a></li>
+                  <li class="menu__subitem"><a href="#">Сертификация ISO</a></li>
+                  <li class="menu__subitem"><a href="#">Аттестация НАКС</a></li>
+                  <li class="menu__subitem"><a href="#">Метрологическая поверка и калибровка лабораторного оборудования</a></li>
+                  <li class="menu__subitem"><a href="#">Разработка и согласование технической документации</a></li>
+                  <li class="menu__subitem"><a href="#">План мероприятий по локализации и ликвидации последствий аварий</a></li>
+                  <li class="menu__subitem"><a href="#">Экспертиза промышленной безопасности</a></li>
+                  <li class="menu__subitem"><a href="#">Декларация промышленной безопасности</a></li>
+                  <li class="menu__subitem"><a href="#">Оценка профессиональных рисков</a></li>
+                  <li class="menu__subitem"><a href="#">Интеллектуальная собственность</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Акции</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Форум</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Партнерам</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search">
+          <button type="button" class="search__open"></button>
+          <div class="search__drop">
+            <form action="#" class="search__form">
+              <input type="text" class="search__form" placeholder="Поиск">
+              <button type="submit" class="search__btn" title="Найти"></button>
+            </form>
+          </div>
+        </div>
+        <button type="button" class="header__btn"></button>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <section class="promo">
+      <div class="swiper-container promo__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide promo__slide" style="background-image:url(img/images/bg_banner-1.jpg);">
+            <div class="wrapper">
+              <div class="promo__block">
+                <p class="title">Аттестация лабораторий НК</p>
+                <p class="promo__subtitle">Наша организация оперативно и качественно готовит документы по аттестации, а также готовит персонал лабораторий и проводит оперативную аттестацию</p>
+                <a href="#" class="btn btn--white promo__btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide promo__slide" style="background-image:url(img/images/bg_banner-1.jpg);">
+            <div class="wrapper">
+              <div class="promo__block">
+                <p class="title">Аттестация лабораторий НК</p>
+                <p class="promo__subtitle">Наша организация оперативно и качественно готовит документы по аттестации, а также готовит персонал лабораторий и проводит оперативную аттестацию</p>
+                <a href="#" class="btn btn--white promo__btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide promo__slide" style="background-image:url(img/images/bg_banner-1.jpg);">
+            <div class="wrapper">
+              <div class="promo__block">
+                <p class="title">Аттестация лабораторий НК</p>
+                <p class="promo__subtitle">Наша организация оперативно и качественно готовит документы по аттестации, а также готовит персонал лабораторий и проводит оперативную аттестацию</p>
+                <a href="#" class="btn btn--white promo__btn">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination promo__pagination"></div>
+      </div>
+      <div class="wrapper">
+        <div class="promo__form">
+          <p class="title-3">Заказать консультацию</p>
+          <form action="#" class="form">
+            <select class="form__select">
+              <option value="">Услуга, которая вас интересует</option>
+              <option value="1">Услуга 1</option>
+              <option value="2">Услуга 2</option>
+              <option value="3">Услуга 3</option>
+            </select>
+            <input type="text" class="form__input" placeholder="ФИО или организация">
+            <input type="mail" class="form__input" placeholder="Электронная почта">
+            <input type="tel" class="form__input" placeholder="Номер телефона">
+            <input type="checkbox" id="checkbox" class="form__checkbox">
+            <label for="checkbox" class="form__check">Я согласен на обработку <a href="#">персональных данных</a></label>
+            <button type="submit" class="form__btn">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="company">
+      <div class="wrapper">
+        <div class="company__wrap">
+          <figure class="company__img">
+            <img src="img/images/presentation.jpg" alt="О компании">
+          </figure>
+          <div class="company__info">
+            <p class="title">О компании «ЕСИС»</p>
+            <p>Компания ESIS («ЕСИС», Европейские Стандарты и Спецификации) уже более 10 лет осуществляет консультационную деятельность в области промышленной безопасности. Небольшая юридическая фирма оказывала услуги по консалтинговому сопровождению проектов и оформлению разрешительной документации в области промышленной безопасности. Ядром компании была группа молодых и энергичных специалистов.</p>
+            <a href="#" class="link">читать далее</a>
+            <a href="#" class="link link--pdf">Смотреть презентацию</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="service">
+      <div class="wrapper">
+        <p class="title">Ключевые услуги</p>
+        <div class="service__wrap">
+          <div class="swiper-container service__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide service__slide">
+                <a href="#" class="service__link">
+                  <figure class="service__icon">
+                    <img src="img/icons/icon-1.svg" alt="Аттестация и аккредитация лабораторий">
+                  </figure>
+                  <p class="title-4">Аттестация и аккредитация лабораторий</p>
+                  <p>Деятельность по подтверждению соответствия лаборатории установленным требованиям промышленной безопасности</p>
+                  <span class="btn service__btn">Подробнее</span>
+                </a>
+              </div>
+              <div class="swiper-slide service__slide">
+                <a href="#" class="service__link">
+                  <figure class="service__icon">
+                    <img src="img/icons/icon-2.svg" alt="Аттестация персонала">
+                  </figure>
+                  <p class="title-4">Аттестация персонала</p>
+                  <p>Деятельность, связанная со строительством, эксплуатацией, а также консервацией (или ликвидацией) опасных производственных объектов</p>
+                  <span class="btn service__btn">Подробнее</span>
+                </a>
+              </div>
+              <div class="swiper-slide service__slide">
+                <a href="#" class="service__link">
+                  <figure class="service__icon">
+                    <img src="img/icons/icon-3.svg" alt="Повышение квалификации и обучение">
+                  </figure>
+                  <p class="title-4">Повышение квалификации и обучение</p>
+                  <p>Профессиональное обучение залог не только конкурентоспособности, но и получение всех разрешительных документов на ведение деятельности</p>
+                  <span class="btn service__btn">Подробнее</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev service__prev"></div>
+          <div class="swiper-button-next service__next"></div>
+        </div>
+        <a href="#" class=" btn service__more">Все услуги</a>
+      </div>
+    </section>
+    
+    <section class="clients">
+      <div class="wrapper">
+        <p class="title">Наши клиенты</p>
+        <div class="clients__wrap">
+          <div class="swiper-container clients__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide clients__slide">
+                <a href="#" class="clients__link">
+                  <img src="img/images/logo-1.png" alt="Наши клиенты">
+                </a>
+                <div class="clients__drop">
+                  <p class="title-4">НК «Роснефть»</p>
+                  <p><b>Оказанная услуга:</b>Обучение охране труда при работе на высоте</p>
+                  <a href="#" class="clients__all">Все клиенты</a>
+                </div>
+              </div>
+              <div class="swiper-slide clients__slide">
+                <a href="#" class="clients__link">
+                  <img src="img/images/logo-2.png" alt="Наши клиенты">
+                </a>
+                <div class="clients__drop">
+                  <p class="title-4">НК «Роснефть»</p>
+                  <p><b>Оказанная услуга:</b>Обучение охране труда при работе на высоте</p>
+                  <a href="#" class="clients__all">Все клиенты</a>
+                </div>
+              </div>
+              <div class="swiper-slide clients__slide">
+                <a href="#" class="clients__link">
+                  <img src="img/images/logo-3.png" alt="Наши клиенты">
+                </a>
+                <div class="clients__drop">
+                  <p class="title-4">НК «Роснефть»</p>
+                  <p><b>Оказанная услуга:</b>Обучение охране труда при работе на высоте</p>
+                  <a href="#" class="clients__all">Все клиенты</a>
+                </div>
+              </div>
+              <div class="swiper-slide clients__slide">
+                <a href="#" class="clients__link">
+                  <img src="img/images/logo-4.png" alt="Наши клиенты">
+                </a>
+                <div class="clients__drop">
+                  <p class="title-4">НК «Роснефть»</p>
+                  <p><b>Оказанная услуга:</b>Обучение охране труда при работе на высоте</p>
+                  <a href="#" class="clients__all">Все клиенты</a>
+                </div>
+              </div>
+              <div class="swiper-slide clients__slide">
+                <a href="#" class="clients__link">
+                  <img src="img/images/logo-5.png" alt="Наши клиенты">
+                </a>
+                <div class="clients__drop">
+                  <p class="title-4">НК «Роснефть»</p>
+                  <p><b>Оказанная услуга:</b>Обучение охране труда при работе на высоте</p>
+                  <a href="#" class="clients__all">Все клиенты</a>
+                </div>
+              </div>
+              <div class="swiper-slide clients__slide">
+                <a href="#" class="clients__link">
+                  <img src="img/images/logo-6.png" alt="Наши клиенты">
+                </a>
+                <div class="clients__drop">
+                  <p class="title-4">НК «Роснефть»</p>
+                  <p><b>Оказанная услуга:</b>Обучение охране труда при работе на высоте</p>
+                  <a href="#" class="clients__all">Все клиенты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev clients__prev"></div>
+          <div class="swiper-button-next clients__next"></div>
+        </div>
+        <a href="#" class="btn clients__more">Все клиенты</a>
+      </div>
+    </section>
+    
+    <section class="team">
+      <div class="wrapper">
+        <p class="title">Наша команда</p>
+        <div class="team__wrap">
+          <div class="swiper-container team__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide team__slide">
+                <a href="#" class="team__link">
+                  <figure class="team__img">
+                    <img src="img/images/team_1.jpg" alt="Наша команда">
+                  </figure>
+                  <p class="title-4">Кирсанова Ольга Викторовна</p>
+                  <p class="team__position">Ведущий менеджер</p>
+                </a>
+              </div>
+              <div class="swiper-slide team__slide">
+                <a href="#" class="team__link">
+                  <figure class="team__img">
+                    <img src="img/images/team_2.jpg" alt="Наша команда">
+                  </figure>
+                  <p class="title-4">Викторов Вениамин Леонидович</p>
+                  <p class="team__position">Старший аналитик</p>
+                </a>
+              </div>
+              <div class="swiper-slide team__slide">
+                <a href="#" class="team__link">
+                  <figure class="team__img">
+                    <img src="img/images/team_3.jpg" alt="Наша команда">
+                  </figure>
+                  <p class="title-4">Останкин Сергей Александрович</p>
+                  <p class="team__position">Адвокат</p>
+                </a>
+              </div>
+              <div class="swiper-slide team__slide">
+                <a href="#" class="team__link">
+                  <figure class="team__img">
+                    <img src="img/images/team_4.jpg" alt="Наша команда">
+                  </figure>
+                  <p class="title-4">Розанова Юлия Алексеевна</p>
+                  <p class="team__position">Секретарь</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev team__prev"></div>
+          <div class="swiper-button-next team__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="tabs" id="tabs">
+      <div class="wrapper">
+        <p class="title">Преимущества</p>
+        <div class="tabs__wrap">
+          <ul class="tabs__title">
+            <li class="tabs__name">
+              <a href="#tabs-1">
+                <figure class="tabs__icon">
+                  <img src="img/images/benefits_1.jpg" alt="Преимущества">
+                </figure>
+                <div class="tabs__info">Работаем по всей России</div>
+              </a>
+            </li>
+            <li class="tabs__name">
+              <a href="#tabs-2">
+                <figure class="tabs__icon">
+                  <img src="img/images/benefits_2.jpg" alt="Преимущества">
+                </figure>
+                <div class="tabs__info">Минимальные сроки</div>
+              </a>
+            </li>
+            <li class="tabs__name">
+              <a href="#tabs-3">
+                <figure class="tabs__icon">
+                  <img src="img/images/benefits_3.jpg" alt="Преимущества">
+                </figure>
+                <div class="tabs__info">Заявки в любой форме</div>
+              </a>
+            </li>
+            <li class="tabs__name">
+              <a href="#tabs-4">
+                <figure class="tabs__icon">
+                  <img src="img/images/benefits_4.jpg" alt="Преимущества">
+                </figure>
+                <div class="tabs__info">Широкий спектр услуг</div>
+              </a>
+            </li>
+            <li class="tabs__name">
+              <a href="#tabs-5">
+                <figure class="tabs__icon">
+                  <img src="img/images/benefits_5.jpg" alt="Преимущества">
+                </figure>
+                <div class="tabs__info">Гарантия лучшей цены</div>
+              </a>
+            </li>
+            <li class="tabs__name">
+              <a href="#tabs-6">
+                <figure class="tabs__icon">
+                  <img src="img/images/benefits_6.jpg" alt="Преимущества">
+                </figure>
+                <div class="tabs__info">На рынке с 2006 года</div>
+              </a>
+            </li>
+          </ul>
+          <div class="tabs__field" id="tabs-1">
+            <figure class="tabs__img">
+              <img src="img/images/benefits_1.jpg" alt="Преимущества">
+            </figure>
+            <p class="title-4">Работаем по всей России</p>
+            <p>Компания «Европейские стандарты и сертификация» предлагает свои услуги всем, кто хочет быть лидером в конкурентной борьбе за доверие постоянных клиентов</p>
+          </div>
+          <div class="tabs__field" id="tabs-2">
+            <figure class="tabs__img">
+              <img src="img/images/benefits_2.jpg" alt="Преимущества">
+            </figure>
+            <p class="title-4">Минимальные сроки</p>
+            <p>Компания «Европейские стандарты и сертификация» предлагает свои услуги всем, кто хочет быть лидером в конкурентной борьбе за доверие постоянных клиентов</p>
+          </div>
+          <div class="tabs__field" id="tabs-3">
+            <figure class="tabs__img">
+              <img src="img/images/benefits_3.jpg" alt="Преимущества">
+            </figure>
+            <p class="title-4">Заявки в любой форме</p>
+            <p>Компания «Европейские стандарты и сертификация» предлагает свои услуги всем, кто хочет быть лидером в конкурентной борьбе за доверие постоянных клиентов</p>
+          </div>
+          <div class="tabs__field" id="tabs-4">
+            <figure class="tabs__img">
+              <img src="img/images/benefits_4.jpg" alt="Преимущества">
+            </figure>
+            <p class="title-4">Широкий спектр услуг</p>
+            <p>Компания «Европейские стандарты и сертификация» предлагает свои услуги всем, кто хочет быть лидером в конкурентной борьбе за доверие постоянных клиентов</p>
+          </div>
+          <div class="tabs__field" id="tabs-5">
+            <figure class="tabs__img">
+              <img src="img/images/benefits_5.jpg" alt="Преимущества">
+            </figure>
+            <p class="title-4">Гарантия лучшей цены</p>
+            <p>Компания «Европейские стандарты и сертификация» предлагает свои услуги всем, кто хочет быть лидером в конкурентной борьбе за доверие постоянных клиентов</p>
+          </div>
+          <div class="tabs__field" id="tabs-6">
+            <figure class="tabs__img">
+              <img src="img/images/benefits_6.jpg" alt="Преимущества">
+            </figure>
+            <p class="title-4">На рынке с 2006 года</p>
+            <p>Компания «Европейские стандарты и сертификация» предлагает свои услуги всем, кто хочет быть лидером в конкурентной борьбе за доверие постоянных клиентов</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="news">
+      <div class="wrapper">
+        <p class="title">Новости</p>
+        <ul class="news__list">
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <figure class="news__img">
+                <img src="img/images/news_1.jpg" alt="Новости">
+              </figure>
+              <div class="news__info">
+                <time datetime="2020-01-29">29 января 2020</time>
+                <p class="title-4">Оптимистичные ожидания власти и бизнеса от 2020 года</p>
+                <p>Руководители министерств, крупных государственных и частных корпораций рас...</p>
+                <span class="news__more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <figure class="news__img">
+                <img src="img/images/news_2.jpg" alt="Новости">
+              </figure>
+              <div class="news__info">
+                <time datetime="2020-01-29">29 января 2020</time>
+                <p class="title-4">В Крыму будут создавать совместные российско-израильские лаборатории</p>
+                <p>МГУ Ломоносова и Институт Вулкани из Изр...</p>
+                <span class="news__more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <figure class="news__img">
+                <img src="img/images/news_3.jpg" alt="Новости">
+              </figure>
+              <div class="news__info">
+                <time datetime="2020-01-29">29 января 2020</time>
+                <p class="title-4">«Ростех» предложил создать федерального оператора промышленных отходов</p>
+                <p>Руководитель «Ростеха» С. Чемезов предлож...</p>
+                <span class="news__more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#" class="news__link">
+              <figure class="news__img">
+                <img src="img/images/news_4.jpg" alt="Новости">
+              </figure>
+              <div class="news__info">
+                <time datetime="2020-01-29">29 января 2020</time>
+                <p class="title-4">Изменения в жизни автомобилистов</p>
+                <p>Прошедший год не принес каких-либо значительных изменений в жизни автокомп...</p>
+                <span class="news__more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a href="#" class="btn news__btn">Все новости</a>
+      </div>
+    </section>
+    
+    <section class="partner">
+      <div class="wrapper">
+        <div class="partner__wrap">
+          <a href="#" class="partner__block partner__block--red">
+            <p class="title-3">Cтаньте нашим клиентом</p>
+            <p>Мы поможем вам разобраться в вопросе лицензирования, сертификации, подобрать необходимые документы и ознакомиться с законодательством, регулирующим все процедурные моменты</p>
+            <span class="btn partner__btn">Оставить заявку</span>
+          </a>
+          <a href="#" class="partner__block">
+            <p class="title-3">Cтаньте нашим партнером</p>
+            <p>Мы поможем вам разобраться в вопросе лицензирования, сертификации, подобрать необходимые документы и ознакомиться с законодательством, регулирующим все процедурные моменты</p>
+            <span class="btn partner__btn">Стать партнером</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="review">
+      <div class="wrapper">
+        <p class="title">Отзывы наших клиентов</p>
+        <div class="review__wrap">
+          <div class="swiper-container review__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide review__slide">
+                <a href="#" class="review__link">
+                  <figure class="review__img">
+                    <img src="img/images/logo-7.png" alt="Отзывы">
+                  </figure>
+                  <p class="title-4">ПАО «Газпром автоматизация»</p>
+                  <p>ПАО «Газпром автоматизация» (далее - Общество) выражает благодарность ООО «Европейские стандарты и сертификация» (далее - Компания) за проделанную работу по аттестации специалистов Общества по неразрушающему и разрушающему контролю.</p>
+                  <span class="link review__more">Смотреть оригинал отзыва</span>
+                </a>
+              </div>
+              <div class="swiper-slide review__slide">
+                <a href="#" class="review__link">
+                  <figure class="review__img">
+                    <img src="img/images/logo-8.png" alt="Отзывы">
+                  </figure>
+                  <p class="title-4">ООО «ННПО»</p>
+                  <p>ПАО «Газпром автоматизация» (далее - Общество) выражает благодарность ООО «Европейские стандарты и сертификация» (далее - Компания) за проделанную работу по аттестации специалистов Общества по неразрушающему и разрушающему контролю.</p>
+                  <span class="link review__more">Смотреть оригинал отзыва</span>
+                </a>
+              </div>
+              <div class="swiper-slide review__slide">
+                <a href="#" class="review__link">
+                  <figure class="review__img">
+                    <img src="img/images/logo-9.png" alt="Отзывы">
+                  </figure>
+                  <p class="title-4">ООО «ФПК»</p>
+                  <p>ПАО «Газпром автоматизация» (далее - Общество) выражает благодарность ООО «Европейские стандарты и сертификация» (далее - Компания) за проделанную работу по аттестации специалистов Общества по неразрушающему и разрушающему контролю.</p>
+                  <span class="link review__more">Смотреть оригинал отзыва</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev review__prev"></div>
+          <div class="swiper-button-next review__next"></div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="mission">
+      <div class="wrapper">
+        <p class="title">Миссия и ценности нашей компании</p>
+        <div class="mission__columns">
+          <div class="mission__column">
+            <p>Цель работы компании — поиск наиболее оптимальных способов решения задачи, внимательное отношение к вашим потребностям, тщательная, юридически выверенная и технически безупречная подготовка документов.</p>
+            <p>«ЕСИС» использует легальные методы достижения целей, работает в полном соответствии с законодательством РФ и требованиями надзорных органов для обеспечения успеха вашего бизнеса. Эффективный результат — стандарт нашей работы.</p>
+          </div>
+          <div class="mission__column">
+            <p>Компания «Европейские стандарты и сертификация» предлагает свои услуги всем, кто хочет быть лидером в конкурентной борьбе за доверие постоянных и привлечение новых партнеров и клиентов, кто заботится о развитии и процветании своей компании.</p>
+            <p>Мы надеемся, что наш сайт поможет вам разобраться в вопросе лицензирования, сертификации, подобрать необходимые документы и ознакомиться с законодательством, регулирующим все процедурные моменты.</p>
+          </div>
+        </div>
+        <a href="#" class="btn mission__btn">Узнать больше</a>
+      </div>
+    </section>
+    
+    <div class="feedback">
+      <div class="wrapper">
+        <div class="feedback__wrap">
+          <p class="title-4">Сообщите нам свое впечатление о работе компании или отдельного сотрудника:</p>
+          <a href="#" class="feedback__btn feedback__btn--red">Пожаловаться</a>
+          <a href="#" class="feedback__btn feedback__btn--green">Похвалить</a>
+          <a href="#" class="feedback__btn feedback__btn--white">Задать вопрос</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <div class="footer__block">
+          <p class="footer__title">Ключевые услуги</p>
+          <ul class="footer__list">
+            <li><a href="#">Консалтинговое сопровождение</a></li>
+            <li><a href="#">Аккредитация и аттестация лабораторий</a></li>
+            <li><a href="#">Лицензирование</a></li>
+            <li><a href="#">Повышение квалификации и обучение</a></li>
+            <li><a href="#">Сертификация</a></li>
+            <li><a href="#">Аттестация технологий сварки</a></li>
+            <li><a href="#">Сертификация ISO</a></li>
+            <li><a href="#">Экспертиза промышленной безопасности</a></li>
+            <li><a href="#">Аттестация персонала</a></li>
+            <li><a href="#">Оценка профессиональных рисков</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <p class="footer__title">Компания</p>
+          <ul class="footer__list">
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <p class="footer__title">Общее</p>
+          <ul class="footer__list">
+            <li><a href="#">Акции</a></li>
+            <li><a href="#">Партнерам</a></li>
+            <li><a href="#">Законодательство</a></li>
+            <li><a href="#">Форум</a></li>
+            <li><a href="#">Документы</a></li>
+          </ul>
+        </div>
+        <div class="footer__block">
+          <p class="footer__title">Контакты</p>
+          <address class="footer__contacts footer__contacts--address">г. Москва, ул. Арбат, д. 35, оф. 317</address>
+          <a href="tel:+74951203585" class="footer__contacts footer__contacts--phone">+7 495 120-35-85</a>
+          <a href="tel:+78003336518" class="footer__contacts footer__contacts--phone">+7 800 333-65-18</a>
+          <a href="mailto:alexesis@bk.ru" class="footer__contacts footer__contacts--email">alexesis@bk.ru</a>
+          <a href="mailto:baa@esis-info.ru" class="footer__contacts footer__contacts--email">baa@esis-info.ru</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__copyright">
+          <p>© 2021 «Европейские стандарты и сертификация».<br>Любое использование материалов, размещенных на сайте без разрешения владельцев – запрещено авторскими правами</p>
+        </div>
+        <div class="footer__links">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Карта сайта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- Sliders -->
+  <script>
+    var mySwiper1 = new Swiper ('.promo__slider', {
+      pagination: {
+        el: '.promo__pagination',
+        clickable: true,
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+    });
+    
+    var mySwiper2 = new Swiper ('.service__slider', {
+      navigation: {
+        nextEl: '.service__next',
+        prevEl: '.service__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 22,
+      loop: true,
+      breakpoints: {
+        1280: {
+          slidesPerView: 3,
+        },
+      }
+    });
+    
+    var mySwiper3 = new Swiper ('.clients__slider', {
+      navigation: {
+        nextEl: '.clients__next',
+        prevEl: '.clients__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 22,
+      loop: true,
+      breakpoints: {
+        1280: {
+          slidesPerView: 6,
+        },
+      }
+    });
+    
+    var mySwiper4 = new Swiper ('.team__slider', {
+      navigation: {
+        nextEl: '.team__next',
+        prevEl: '.team__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 23,
+      loop: true,
+      breakpoints: {
+        1280: {
+          slidesPerView: 4,
+        },
+      }
+    });
+    
+    var mySwiper5 = new Swiper ('.review__slider', {
+      navigation: {
+        nextEl: '.review__next',
+        prevEl: '.review__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 22,
+      loop: true,
+      breakpoints: {
+        1280: {
+          slidesPerView: 3,
+        },
+      }
+    });
+  </script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
+</body>
+</html>
