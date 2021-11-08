@@ -15,7 +15,7 @@ $('.search__open').click(function() {
 });
 
 //Mobile footer
-if (window.innerWidth < 766) {
+if (window.innerWidth < 960) {
   $('.footer__title').click(function() {
     $(this).next().slideToggle();
     $(this).toggleClass('footer__title--up');

@@ -17,6 +17,12 @@
     <symbol id="icon-dropdown">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M8.78733 1.17224L5.01627 4.79917C4.73272 5.06694 4.27344 5.06694 3.98989 4.79917C3.97291 4.78307 3.96692 4.76294 3.95195 4.74582L0.220821 1.15613C-0.0627323 0.887357 -0.0787072 0.468593 0.204846 0.200825C0.4884 -0.0669418 0.947677 -0.0669418 1.23123 0.200825L4.49709 3.35061L7.76095 0.202839C8.0445 -0.0649285 8.50378 -0.0649285 8.78733 0.202839C9.07089 0.470606 9.07089 0.90447 8.78733 1.17224Z"/>
     </symbol>
+    <symbol id="icon-next">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5667 11.7243L6.73184 6.56128C7.08938 6.19349 7.08938 5.59684 6.73184 5.22805C6.71008 5.20607 6.6821 5.19807 6.6593 5.17808L1.54493 0.286922C1.18739 -0.0818638 0.625693 -0.101852 0.268153 0.265935C-0.089386 0.633721 -0.089386 1.23138 0.268153 1.59916L4.79491 5.88667L0.271263 10.3891C-0.0862766 10.7578 -0.0862766 11.3545 0.271263 11.7233C0.628802 12.0921 1.20916 12.0921 1.5667 11.7243Z"/>
+    </symbol>
+    <symbol id="icon-prev">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4333 0.275715L0.268155 5.43872C-0.0893849 5.80651 -0.0893849 6.40316 0.268155 6.77195C0.289918 6.79393 0.317899 6.80193 0.340699 6.82192L5.45507 11.7131C5.81261 12.0819 6.37431 12.1019 6.73185 11.7341C7.08939 11.3663 7.08939 10.7686 6.73185 10.4008L2.20509 6.11333L6.72874 1.61094C7.08628 1.24215 7.08628 0.645501 6.72874 0.276715C6.3712 -0.0920714 5.79084 -0.0920715 5.4333 0.275715Z"/>
+    </symbol>
   </svg>
 
   <header class="header">
@@ -60,14 +66,12 @@
               <a href="#" class="menu__link">О компании</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">
-                <span>Услуги</span>
-                <button type="button" class="menu__arrow">
-                  <svg width="9" height="5" viewBox="0 0 9 5" xmlns="http://www.w3.org/2000/svg">
-                    <use href="#icon-dropdown"></use>
-                  </svg>
-                </button>
-              </a>
+              <a href="#" class="menu__link">Услуги</a>
+              <button type="button" class="menu__arrow">
+                <svg width="9" height="5" viewBox="0 0 9 5" xmlns="http://www.w3.org/2000/svg">
+                  <use href="#icon-dropdown"></use>
+                </svg>
+              </button>
               <div class="menu__drop">
                 <ul class="menu__sublist">
                   <li class="menu__subitem"><a href="#">Аттестация и аккредитация лабораторий</a></li>
@@ -187,9 +191,11 @@
           </figure>
           <div class="company__info">
             <p class="title-2 title-line">О компании «ЕСИС»</p>
-            <p>Компания ESIS («ЕСИС», Европейские Стандарты и Спецификации) уже более 10 лет осуществляет консультационную деятельность в области промышленной безопасности. Небольшая юридическая фирма оказывала услуги по консалтинговому сопровождению проектов и оформлению разрешительной документации в области промышленной безопасности. Ядром компании была группа молодых и энергичных специалистов.</p>
-            <a href="#" class="link">читать далее</a>
-            <a href="#" class="link link--pdf">Смотреть презентацию</a>
+            <p>Компания ESIS («ЕСИС», Европейские Стандарты и Спецификации) уже более 10 лет осуществляет консультационную деятельность в области промышленной безопасности. Небольшая юридическая <span>фирма оказывала услуги по консалтинговому сопровождению проектов и оформлению разрешительной документации в области промышленной безопасности. Ядром компании была группа молодых и энергичных специалистов.</span></p>
+            <div class="company__links">
+              <a href="#" class="link">читать далее</a>
+              <a href="#" class="link link--pdf">Смотреть презентацию</a>
+            </div>
           </div>
         </div>
       </div>
@@ -233,8 +239,16 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev service__prev"></div>
-          <div class="swiper-button-next service__next"></div>
+          <div class="swiper-button-prev service__prev">
+            <svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+              <use href="#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next service__next">
+            <svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+              <use href="#icon-next"></use>
+            </svg>
+          </div>
         </div>
         <a href="#" class=" btn service__more">Все услуги</a>
       </div>
@@ -308,8 +322,16 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev clients__prev"></div>
-          <div class="swiper-button-next clients__next"></div>
+          <div class="swiper-button-prev clients__prev">
+            <svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+              <use href="#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next clients__next">
+            <svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+              <use href="#icon-next"></use>
+            </svg>
+          </div>
         </div>
         <a href="#" class="btn clients__more">Все клиенты</a>
       </div>
@@ -359,8 +381,16 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev team__prev"></div>
-          <div class="swiper-button-next team__next"></div>
+          <div class="swiper-button-prev team__prev">
+            <svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+              <use href="#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next team__next">
+            <svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+              <use href="#icon-next"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
@@ -576,8 +606,16 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev review__prev"></div>
-          <div class="swiper-button-next review__next"></div>
+          <div class="swiper-button-prev review__prev">
+            <svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+              <use href="#icon-prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next review__next">
+            <svg width="7" height="12" viewBox="0 0 7 12" xmlns="http://www.w3.org/2000/svg">
+              <use href="#icon-next"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </section>
@@ -601,8 +639,8 @@
     
     <div class="feedback">
       <div class="wrapper">
+        <p class="title-4">Сообщите нам свое впечатление о работе компании или отдельного сотрудника:</p>
         <div class="feedback__wrap">
-          <p class="title-4">Сообщите нам свое впечатление о работе компании или отдельного сотрудника:</p>
           <a href="#" class="feedback__btn feedback__btn--red">
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M11.998 23.996C5.382 23.996 0 18.614 0 11.998C0 5.383 5.382 0 11.998 0C18.614 0 23.996 5.383 23.996 11.998C23.996 18.614 18.614 23.996 11.998 23.996ZM11.998 2.182C6.585 2.182 2.181 6.585 2.181 11.998C2.181 17.411 6.585 21.815 11.998 21.815C17.411 21.815 21.815 17.412 21.815 11.998C21.815 6.585 17.411 2.182 11.998 2.182ZM16.652 11.126C16.27 11.126 15.894 10.971 15.624 10.7C15.353 10.43 15.198 10.055 15.198 9.672C15.198 9.289 15.353 8.914 15.624 8.644C15.895 8.373 16.27 8.218 16.652 8.218C17.035 8.218 17.41 8.374 17.68 8.644C17.95 8.914 18.106 9.289 18.106 9.672C18.106 10.055 17.95 10.43 17.68 10.7C17.41 10.971 17.034 11.126 16.652 11.126ZM16.472 17.4C16.046 17.826 15.355 17.826 14.929 17.4C13.313 15.784 10.683 15.784 9.067 17.4C8.641 17.826 7.951 17.826 7.525 17.4C7.099 16.974 7.099 16.283 7.525 15.858C8.759 14.624 10.378 14.008 11.998 14.008C13.618 14.008 15.238 14.625 16.471 15.858C16.898 16.283 16.898 16.974 16.472 17.4ZM7.344 11.126C6.962 11.126 6.586 10.971 6.316 10.7C6.045 10.43 5.89 10.054 5.89 9.672C5.89 9.289 6.045 8.914 6.316 8.644C6.587 8.373 6.961 8.218 7.344 8.218C7.727 8.218 8.102 8.374 8.372 8.644C8.643 8.914 8.798 9.289 8.798 9.672C8.798 10.054 8.643 10.43 8.372 10.7C8.102 10.971 7.727 11.126 7.344 11.126Z"/>
@@ -629,7 +667,7 @@
   <footer class="footer">
     <div class="wrapper">
       <div class="footer__top">
-        <div class="footer__block">
+        <div class="footer__block footer__block--service">
           <p class="footer__title">Ключевые услуги</p>
           <ul class="footer__list">
             <li><a href="#">Консалтинговое сопровождение</a></li>
@@ -644,7 +682,7 @@
             <li><a href="#">Оценка профессиональных рисков</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--company">
           <p class="footer__title">Компания</p>
           <ul class="footer__list">
             <li><a href="#">О компании</a></li>
@@ -654,7 +692,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--links">
           <p class="footer__title">Общее</p>
           <ul class="footer__list">
             <li><a href="#">Акции</a></li>
@@ -664,7 +702,7 @@
             <li><a href="#">Документы</a></li>
           </ul>
         </div>
-        <div class="footer__block">
+        <div class="footer__block footer__block--contacts">
           <p class="footer__title">Контакты</p>
           <div class="footer__contacts">
             <address class="footer__contact footer__contact--address">г. Москва, ул. Арбат, д. 35, оф. 317</address>
@@ -717,6 +755,10 @@
       spaceBetween: 20,
       loop: true,
       breakpoints: {
+        960: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
         1280: {
           slidesPerView: 3,
           spaceBetween: 22,
@@ -736,6 +778,9 @@
       spaceBetween: 20,
       loop: true,
       breakpoints: {
+        960: {
+          slidesPerView: 4,
+        },
         1280: {
           slidesPerView: 6,
           spaceBetween: 22,
@@ -755,6 +800,10 @@
       spaceBetween: 20,
       loop: true,
       breakpoints: {
+        960: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
         1280: {
           slidesPerView: 4,
           spaceBetween: 23,
@@ -774,6 +823,13 @@
       spaceBetween: 22,
       loop: true,
       breakpoints: {
+        640: {
+          loop: false,
+        },
+        960: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
         1280: {
           slidesPerView: 3,
         },
@@ -786,12 +842,23 @@
       freeMode: true,
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
+      breakpoints: {
+        640: {
+          direction: 'vertical',
+          slidesPerView: 6,
+        },
+      }
     });
     
     var galleryTop = new Swiper('.gallery-top', {
       spaceBetween: 15,
       thumbs: {
         swiper: galleryThumbs
+      },
+      breakpoints: {
+        640: {
+          spaceBetween: 30,
+        },
       }
     });
   </script>
