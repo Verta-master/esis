@@ -22,6 +22,22 @@
   background-color: #FFFFFF;
   box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
   border-radius: 20px;
+  border: 2px solid rgba(255,255,255,0);
+  .transition();
+  
+  &:hover,
+  &:active {
+    border-color: #2BAAE1;
+    .transition();
+    
+    .title-4 {
+      color: #2BAAE1;
+      .transition();
+    }
+    .service__btn {
+      color: #626C8B;
+    }
+  }
 }
 .service__text,
 .service__prev,

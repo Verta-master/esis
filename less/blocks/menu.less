@@ -1,4 +1,52 @@
-.menu__list,
-.menu__close {
+.menu,
+.menu__arrow,
+.menu__drop {
   display: none;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  padding: 20px;
+  background-color: #fff;
+}
+.menu--opened {
+  z-index: 1000;
+}
+.menu__close {
+  display: block;
+  width: 34px;
+  height: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+  margin-bottom: 20px;
+}
+.menu__list {
+  .reset();
+  list-style: none;
+  text-align: center;
+}
+.menu__item {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  
+  &:hover,
+  &:active {
+    .menu__link {
+      color: #F6364D;
+      .transition();
+    }
+  }
+}
+.menu__link {
+  .transition();
 }
