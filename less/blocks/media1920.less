@@ -1,0 +1,62 @@
+@media (min-width: 1440px) {
+  .header__mail {
+    display: block;
+    margin-right: 40px;
+  }
+  .promo__form {
+    right: ~"calc(50% - 640px)";
+  }
+  .promo .swiper-pagination {
+    left: 28%;
+  }
+  .company,
+  .review,
+  .partner,
+  .team {
+    padding-bottom: 0;
+    
+    &::after {
+      display: none;
+    }
+    
+    .wrapper {
+      position: relative;
+      padding-bottom: 60px;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+        right: 50px;
+        height: 2px;
+        background-color: #dbe1eb;
+      }
+    }
+  }
+  .company .wrapper,
+  .partner .wrapper {
+    padding-bottom: 100px;
+  }
+  .review .wrapper {
+    padding-bottom: 0;
+  }
+  .team__img {
+    height: 238px;
+  }
+  .team__link {
+    padding: 40px;
+  }
+  .news__img {
+    width: 230px;
+  }
+  .news__info {
+    width: ~"calc(100% - 260px)";
+  }
+  .feedback__btn {
+    width: 267px;
+  }
+  .feedback__btn--green {
+    width: 232px;
+  }
+}

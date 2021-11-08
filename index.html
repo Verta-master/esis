@@ -162,24 +162,22 @@
         </div>
         <div class="swiper-pagination promo__pagination"></div>
       </div>
-      <div class="wrapper promo__form-wrap">
-        <div class="promo__form">
-          <p class="title-3">Заказать консультацию</p>
-          <form action="#" class="form">
-            <select class="form__select">
-              <option value="">Услуга, которая вас интересует</option>
-              <option value="1">Услуга 1</option>
-              <option value="2">Услуга 2</option>
-              <option value="3">Услуга 3</option>
-            </select>
-            <input type="text" class="form__input" placeholder="ФИО или организация">
-            <input type="mail" class="form__input" placeholder="Электронная почта">
-            <input type="tel" class="form__input" placeholder="Номер телефона">
-            <input type="checkbox" id="checkbox" class="form__checkbox">
-            <label for="checkbox" class="form__check">Я согласен на обработку <a href="#">персональных данных</a></label>
-            <button type="submit" class="form__btn">Отправить заявку</button>
-          </form>
-        </div>
+      <div class="promo__form">
+        <p class="title-3">Заказать консультацию</p>
+        <form action="#" class="form">
+          <select class="form__select">
+            <option value="" selected disabled>Услуга, которая вас интересует</option>
+            <option value="1">Услуга 1</option>
+            <option value="2">Услуга 2</option>
+            <option value="3">Услуга 3</option>
+          </select>
+          <input type="text" class="form__input" placeholder="ФИО или организация">
+          <input type="mail" class="form__input" placeholder="Электронная почта">
+          <input type="tel" class="form__input" placeholder="Номер телефона">
+          <input type="checkbox" id="checkbox" class="form__checkbox">
+          <label for="checkbox" class="form__check">Я согласен на обработку <a href="#">персональных данных</a></label>
+          <button type="submit" class="btn form__btn">Отправить заявку</button>
+        </form>
       </div>
     </section>
     
@@ -502,7 +500,7 @@
               <div class="news__info">
                 <time datetime="2020-01-29">29 января 2020</time>
                 <p class="title-4">Оптимистичные ожидания власти и бизнеса от 2020 года</p>
-                <p>Руководители министерств, крупных государственных и частных корпораций рас...</p>
+                <p class="news__text">Руководители министерств, крупных государственных и частных корпораций рас...</p>
                 <span class="link news__more">Подробнее</span>
               </div>
             </a>
@@ -515,7 +513,7 @@
               <div class="news__info">
                 <time datetime="2020-01-29">29 января 2020</time>
                 <p class="title-4">В Крыму будут создавать совместные российско-израильские лаборатории</p>
-                <p>МГУ Ломоносова и Институт Вулкани из Изр...</p>
+                <p class="news__text">МГУ Ломоносова и Институт Вулкани из Изр...</p>
                 <span class="link news__more">Подробнее</span>
               </div>
             </a>
@@ -528,7 +526,7 @@
               <div class="news__info">
                 <time datetime="2020-01-29">29 января 2020</time>
                 <p class="title-4">«Ростех» предложил создать федерального оператора промышленных отходов</p>
-                <p>Руководитель «Ростеха» С. Чемезов предлож...</p>
+                <p class="news__text">Руководитель «Ростеха» С. Чемезов предлож...</p>
                 <span class="link news__more">Подробнее</span>
               </div>
             </a>
@@ -541,7 +539,7 @@
               <div class="news__info">
                 <time datetime="2020-01-29">29 января 2020</time>
                 <p class="title-4">Изменения в жизни автомобилистов</p>
-                <p>Прошедший год не принес каких-либо значительных изменений в жизни автокомп...</p>
+                <p class="news__text">Прошедший год не принес каких-либо значительных изменений в жизни автокомп...</p>
                 <span class="link news__more">Подробнее</span>
               </div>
             </a>
@@ -830,8 +828,13 @@
           slidesPerView: 2,
           spaceBetween: 30,
         },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
         1280: {
           slidesPerView: 3,
+          spaceBetween: 22,
         },
       }
     });
