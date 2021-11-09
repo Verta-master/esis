@@ -1219,6 +1219,16 @@ h4,
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.tabs__thumb:hover .tabs__icon,
+.tabs__thumb:active .tabs__icon {
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__icon {
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 .tabs__info {
   opacity: 0.5;
   font-weight: 600;
@@ -2387,11 +2397,25 @@ a.footer__contact:active {
   }
   .clients__drop {
     position: absolute;
-    top: 105%;
+    top: 100%;
     left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 339px;
+    padding-top: 10px;
+  }
+  .clients__drop::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 49%;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .clients__text {
     padding: 30px;
     text-align: center;
     color: #626C8B;
@@ -2400,28 +2424,35 @@ a.footer__contact:active {
             box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
     border-radius: 20px;
   }
-  .clients__drop::before {
-    content: "";
-    position: absolute;
-    top: -5px;
-    left: 49%;
-    width: 15px;
-    height: 15px;
-    background-color: #fff;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  .clients__drop p {
+  .clients__text p {
     margin-top: 0;
     margin-bottom: 20px;
   }
-  .clients__drop p b {
+  .clients__text p b {
     display: block;
   }
-  .clients__drop .title-4 {
+  .clients__text .title-4 {
     margin-top: 0;
     margin-bottom: 10px;
     color: #000D34;
+  }
+  .clients__slide.swiper-slide-active .clients__drop {
+    left: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .clients__slide.swiper-slide-active .clients__drop::before {
+    left: 28%;
+  }
+  .clients__slide.swiper-slide-duplicate-prev .clients__drop {
+    right: 0;
+    left: auto;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .clients__slide.swiper-slide-duplicate-prev .clients__drop::before {
+    right: 28%;
+    left: auto;
   }
   .clients__next,
   .clients__prev {
