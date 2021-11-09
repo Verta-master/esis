@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: none;
+  margin-top: 40px;
+}
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 16px;
+  line-height: 22px;
+  color: #626C8B;
+}
+a.breadcrumbs__link {
+  text-decoration: underline;
+  margin-right: 20px;
+  
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 20px;
+    width: 5px;
+    height: 9px;
+    background-image: url(../img/icons/next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+}

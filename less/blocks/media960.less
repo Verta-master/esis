@@ -548,4 +548,31 @@
   .gallery-top .tabs__slide:nth-child(4).swiper-slide-active {
     border-radius: 20px 0 20px 20px;
   }
+  .review--internal {
+    margin-top: 0;
+    margin-bottom: 60px;
+    
+    &::after,
+    .review__prev,
+    .review__next {
+      display: none;
+    }
+    .review__slider {
+      padding-bottom: 20px;
+      
+      .swiper-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+    .review__slide {
+      width: 48.5%;
+      margin-bottom: 20px;
+    }
+  }
+  .pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
