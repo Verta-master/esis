@@ -42,6 +42,7 @@
     margin-top: 0;
     margin-right: 40px;
   }
+  .service--internal,
   .review,
   .partner,
   .team,
@@ -219,5 +220,93 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 65px;
+  }
+  .service__promo {
+    margin-top: 40px;
+    
+    .swiper-pagination {
+      bottom: 50px !important;
+    }
+  }
+  .service__promo .promo__slide {
+    padding: 40px;
+    padding-top: 224px;
+    
+    .promo__subtitle {
+      display: block;
+      margin-bottom: 30px;
+      text-align: left;
+      max-width: 430px;
+    }
+    .promo__btn {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+  .service__promo .promo__slide .title {
+    text-align: left;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+  .steps__list,
+  .service__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .service__item {
+    width: 48.5%;
+  }
+  .service__item:nth-child(n+5) {
+    display: block;
+  }
+  .service__item:nth-child(n+9) {
+    display: none;
+  }
+  .steps__item {
+    width: 39%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .steps__list {
+    position: relative;
+    
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 135px;
+      height: 31px;
+      background-image: url(../img/icons/arrow-1.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    &::before {
+      top: 80px;
+    }
+    &::after {
+      bottom: 154px;
+    }
+  }
+  .gift {
+    background-image: url(../img/images/bg-clients.jpg);
+    
+    .title-4 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 36px;
+      line-height: 49px;
+    }
+  }
+  .gift__wrap {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .gift__btn {
+    width: 251px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

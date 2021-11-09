@@ -575,4 +575,120 @@
     justify-content: center;
     align-items: center;
   }
+  .service__block {
+    position: relative;
+  }
+  .service__promo {
+    width: 66%;
+  }
+  .service__item {
+    width: 32%;
+    
+    .service__link .title-4 {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 0;
+    }
+    &:nth-child(n + 9) {
+      display: block;
+    }
+    &:nth-child(n + 15) {
+      display: none;
+    }
+    &:first-child,
+    &:nth-child(2) {
+      position: absolute;
+      right: 0;
+    }
+    &:first-child {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 275px;
+    }
+  }
+  .service-internal {
+    padding-bottom: 60px;
+  }
+  .steps__list {
+    flex-wrap: nowrap;
+  }
+  .steps__item {
+    width: 160px;
+  }
+  .steps__list::before {
+    left: 20%;
+  }
+  .steps__list::after {
+    right: 20%;
+    left: auto;
+    top: 80px;
+    bottom: auto;
+    transform: translateX(50%);
+  }
+  .steps .wrapper {
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 153px;
+      width: 135px;
+      height: 31px;
+      background-image: url(../img/icons/arrow-2.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .steps {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+    .title-2 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+  }
+  .gift__wrap {
+    padding-left: 277px;
+    padding-right: 35px;
+    text-align: left;
+  }
+  .gift::after {
+    width: 203px;
+    height: 203px;
+    left: 64px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .gift {
+    padding-top: 60px;
+  }
+  .gift__btn {
+    margin-left: 0;
+  }
+  .service__promo .promo__slide {
+    height: 530px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .service__promo .promo__block {
+    margin-top: auto;
+  }
+  .service__promo .promo__slide .promo__subtitle {
+    margin-left: 0;
+  }
+  .service__promo .promo__slide .title {
+    font-size: 42px;
+    line-height: 48px;
+    max-width: 430px;
+    margin-left: 0;
+  }
+  .service--internal {
+    padding-bottom: 60px;
+  }
 }
