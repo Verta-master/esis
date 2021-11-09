@@ -587,7 +587,7 @@
           <div class="swiper-container review__slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide review__slide">
-                <a href="#" class="review__link">
+                <a data-fancybox="gallery" href="img/images/review.jpg" class="review__link">
                   <figure class="review__img">
                     <img src="img/images/logo-7.png" alt="Отзывы">
                   </figure>
@@ -597,7 +597,7 @@
                 </a>
               </div>
               <div class="swiper-slide review__slide">
-                <a href="#" class="review__link">
+                <a data-fancybox="gallery" href="img/images/review.jpg" class="review__link">
                   <figure class="review__img">
                     <img src="img/images/logo-8.png" alt="Отзывы">
                   </figure>
@@ -607,7 +607,7 @@
                 </a>
               </div>
               <div class="swiper-slide review__slide">
-                <a href="#" class="review__link">
+                <a data-fancybox="gallery" href="img/images/review.jpg" class="review__link">
                   <figure class="review__img">
                     <img src="img/images/logo-9.png" alt="Отзывы">
                   </figure>
@@ -741,7 +741,10 @@
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/clients-slider.js"></script>
+  <script src="js/team-slider.js"></script>
+  <script src="js/review-slider.js"></script>
+  <script src="js/benefits-slider.js"></script>
 
 <!-- Sliders -->
   <script>
@@ -774,113 +777,6 @@
         1280: {
           slidesPerView: 3,
           spaceBetween: 22,
-        },
-      }
-    });
-    
-    var mySwiper3 = new Swiper ('.clients__slider', {
-      navigation: {
-        nextEl: '.clients__next',
-        prevEl: '.clients__prev',
-      },
-      simulateTouch: false,
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-      loop: true,
-      breakpoints: {
-        960: {
-          slidesPerView: 4,
-        },
-        1280: {
-          slidesPerView: 6,
-          spaceBetween: 22,
-        },
-      }
-    });
-    
-    var mySwiper4 = new Swiper ('.team__slider', {
-      navigation: {
-        nextEl: '.team__next',
-        prevEl: '.team__prev',
-      },
-      simulateTouch: false,
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 'auto',
-      spaceBetween: 20,
-      loop: true,
-      breakpoints: {
-        960: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        1280: {
-          slidesPerView: 4,
-          spaceBetween: 23,
-        },
-      }
-    });
-    
-    var mySwiper5 = new Swiper ('.review__slider', {
-      navigation: {
-        nextEl: '.review__next',
-        prevEl: '.review__prev',
-      },
-      simulateTouch: false,
-      preventClicks: false,
-      preventClicksPropagation: false,
-      slidesPerView: 'auto',
-      spaceBetween: 22,
-      loop: true,
-      breakpoints: {
-        640: {
-          loop: false,
-        },
-        960: {
-          slidesPerView: 2,
-          spaceBetween: 30,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-        1280: {
-          slidesPerView: 3,
-          spaceBetween: 22,
-        },
-      }
-    });
-    
-    var galleryThumbs = new Swiper('.gallery-thumbs', {
-      spaceBetween: 10,
-      slidesPerView: 'auto',
-      freeMode: true,
-      watchSlidesVisibility: true,
-      watchSlidesProgress: true,
-      breakpoints: {
-        640: {
-          direction: 'vertical',
-          slidesPerView: 6,
-          spaceBetween: 10,
-        },
-        960: {
-          direction: 'vertical',
-          slidesPerView: 'auto',
-          spaceBetween: 20,
-        },
-      }
-    });
-    
-    var galleryTop = new Swiper('.gallery-top', {
-      spaceBetween: 15,
-      thumbs: {
-        swiper: galleryThumbs
-      },
-      breakpoints: {
-        640: {
-          spaceBetween: 30,
         },
       }
     });

@@ -470,6 +470,15 @@ h1,
   line-height: 36px;
   text-align: center;
 }
+h1,
+h1.title {
+  text-align: left;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 24px;
+  margin-top: 40px;
+}
 h2,
 .title-2 {
   margin-bottom: 24px;
@@ -1446,6 +1455,14 @@ h4,
 .review .title-2 {
   margin: 0;
 }
+.review--internal {
+  margin-top: 0;
+  border-bottom: 0;
+}
+.review--internal h1,
+.review--internal h1.title {
+  margin-bottom: 0;
+}
 .review__wrap {
   position: relative;
 }
@@ -1537,6 +1554,10 @@ h4,
 }
 .review__more span {
   display: none;
+}
+.fancybox-is-open .fancybox-bg {
+  background: #000D34;
+  opacity: 0.5;
 }
 .mission {
   margin-top: 60px;
@@ -1869,6 +1890,94 @@ a.footer__contact:active {
   color: #F6364D;
   background-color: rgba(255, 255, 255, 0);
 }
+.breadcrumbs {
+  display: none;
+  margin-top: 40px;
+}
+.breadcrumbs__link {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 16px;
+  line-height: 22px;
+  color: #626C8B;
+}
+a.breadcrumbs__link {
+  text-decoration: underline;
+  margin-right: 20px;
+}
+a.breadcrumbs__link::after {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: 20px;
+  width: 5px;
+  height: 9px;
+  background-image: url(../img/icons/next.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.5;
+}
+a.breadcrumbs__link:hover,
+a.breadcrumbs__link:active {
+  text-decoration: none;
+}
+.pages {
+  display: none;
+}
+.pages__nav,
+.pages__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.pages__nav {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.pages__nav svg {
+  width: 7px;
+  height: 12px;
+  fill: #2BAAE1;
+}
+.pages__link {
+  width: 48px;
+  height: 48px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 48px;
+  color: #626C8B;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #DBE1EB;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.pages__link--active {
+  color: #2BAAE1;
+  border-color: #2BAAE1;
+  pointer-events: none;
+}
+.pages__link--disabled {
+  pointer-events: none;
+}
+a.pages__link:hover,
+a.pages__link:active {
+  color: #2BAAE1;
+  border-color: #2BAAE1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 @media (min-width: 640px) {
   .header__city span {
     display: block;
@@ -2104,6 +2213,15 @@ a.footer__contact:active {
   .feedback {
     background-image: url(../img/images/bg-feedback-tablet.jpg);
     background-position: left center;
+  }
+  .breadcrumbs {
+    display: block;
+  }
+  h1,
+  h1.title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
   }
 }
 @media (min-width: 960px) {
@@ -2718,6 +2836,40 @@ a.footer__contact:active {
   .gallery-top .tabs__slide:nth-child(4).swiper-slide-active {
     border-radius: 20px 0 20px 20px;
   }
+  .review--internal {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  .review--internal::after,
+  .review--internal .review__prev,
+  .review--internal .review__next {
+    display: none;
+  }
+  .review--internal .review__slider {
+    padding-bottom: 20px;
+  }
+  .review--internal .review__slider .swiper-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .review--internal .review__slide {
+    width: 48.5%;
+    margin-bottom: 20px;
+  }
+  .pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 @media (min-width: 1024px) {
   .logo {
@@ -3061,6 +3213,13 @@ a.footer__contact:active {
   .gallery-thumbs .swiper-slide-thumb-active .tabs__icon {
     opacity: 1;
   }
+  .review--internal {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+  .review--internal .review__slide {
+    width: 32%;
+  }
 }
 @media (min-width: 1440px) {
   .header__mail {
@@ -3137,5 +3296,11 @@ a.footer__contact:active {
   }
   .tabs__info {
     padding-right: 20px;
+  }
+  .review--internal {
+    margin-bottom: 100px;
+  }
+  .review--internal .wrapper::after {
+    display: none;
   }
 }
