@@ -1013,6 +1013,8 @@ h4,
 }
 .service__promo {
   margin-bottom: 20px;
+  position: relative;
+  z-index: 0;
 }
 .service__promo .promo__slider {
   border-radius: 20px;
@@ -2464,6 +2466,10 @@ a.pages__link:active {
     width: 251px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .service__promo .swiper-pagination {
+    width: auto;
+    left: 45%;
   }
 }
 @media (min-width: 960px) {
