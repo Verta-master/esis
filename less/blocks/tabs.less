@@ -45,17 +45,30 @@
   box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
   border-radius: 20px;
   box-sizing: border-box;
+  border: 2px solid #fff;
+  .transition();
   
   &::before {
     content: "";
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    left: -2px;
+    right: -2px;
     height: 10px;
     background-color: #fff;
     z-index: 2;
     display: none;
+  }
+  
+  &:hover,
+  &:active {
+    border-color: #2BAAE1;
+    
+    .tabs__info {
+      opacity: 1;
+      color: #2BAAE1;
+      .transition();
+    }
   }
 }
 .tabs__info {
@@ -63,6 +76,7 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
+  .transition();
 }
 .gallery-thumbs {
   padding-bottom: 6px;
@@ -72,10 +86,12 @@
   margin-right: -15px;
   
   .swiper-slide-thumb-active {
+    border-color: #fff !important;
     border-radius: 20px 20px 0 0;
     
     .tabs__info {
       opacity: 1;
+      color: #000D34 !important;
     }
     
     &::before {
