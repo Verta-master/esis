@@ -38,3 +38,30 @@
     }
   }
 }
+.link--sidebar {
+  position: relative;
+  padding-left: 32px;
+  color: #626C8B;
+  text-transform: none;
+  font-weight: normal;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 24px;
+    background-image: url(../img/icons/pdf-grey.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &:hover,
+  &:active {
+    color:  #F6364D;
+
+    &::before {
+      background-image: url(../img/icons/pdf.svg);
+    }
+  }
+}

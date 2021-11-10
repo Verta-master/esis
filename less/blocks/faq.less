@@ -42,6 +42,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
+  .transition();
   
   &::after {
     content: "";
@@ -59,6 +60,11 @@
     &::after {
       transform: rotate(180deg);
     }
+  }
+  &:hover,
+  &:active {
+    color: #2BAAE1;
+    .transition();
   }
 }
 .faq__drop {
