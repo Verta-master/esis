@@ -67,6 +67,7 @@
   .steps.underline {
     padding-bottom: 80px;
   }
+  .sale,
   .news--internal {
     margin-bottom: 100px;
   }
@@ -75,5 +76,23 @@
   }
   .news__list--internal .news__item:nth-child(n + 3) {
     display: none;
+  }
+  .sale__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sale__gift,
+  .sale__list {
+    width: 48.5%;
+  }
+  .sale__info {
+    text-align: left;
+  }
+  .sale__btn {
+    margin-left: 0;
+  }
+  .sale__gift::after {
+    left: 40px;
+    transform: none;
   }
 }
