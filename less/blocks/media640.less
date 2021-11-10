@@ -359,4 +359,27 @@
   .noline::after {
     display: none;
   }
+  .article__img {
+    height: auto;
+    
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+  .news__list--internal {
+    .news__item {
+      .news__link {
+        padding: 30px;
+      }
+      
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+  .article__content {
+    padding: 30px;
+  }
 }

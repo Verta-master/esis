@@ -328,6 +328,7 @@
     width: 100%;
     padding: 30px;
   }
+  .news__btn--internal,
   .sidebar__btn {
     width: 100%;
   }
@@ -361,5 +362,31 @@
   .news--internal {
     padding-top: 0;
     padding-bottom: 0;
+  }
+  .news__list--internal {
+    display: block;
+    
+    .news__item {
+      width: 100%;
+      
+      &:nth-child(n + 3) {
+        display: block;
+      }
+    }
+    .news__link {
+      display: block;
+    }
+    .news__img,
+    .news__info {
+      width: 100%;
+    }
+    .news__img {
+      margin-bottom: 30px;
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
