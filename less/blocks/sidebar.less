@@ -1,0 +1,63 @@
+.sidebar {
+  
+}
+.sidebar__block {
+  margin-bottom: 20px;
+  padding: 30px 20px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
+  border-radius: 20px;
+  
+  .link {
+    margin-top: 30px;
+  }
+  .link--pdf {
+    margin-top: 18px;
+    padding-left: 32px;
+    color: #626C8B;
+    text-transform: none;
+    font-weight: normal;
+    
+    &::before {
+      background-image: url(../img/icons/pdf-grey.svg);
+    }
+    &:hover,
+    &:active {
+      color:  #F6364D;
+      
+      &::before {
+        background-image: url(../img/icons/pdf.svg);
+      }
+    }
+  }
+  
+  &--blue {
+    color: #fff;
+    background-color: #2BAAE1;
+    
+    .btn--white:hover,
+    .btn--white:active {
+      border-color: #fff;
+    }
+  }
+}
+.sidebar__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 35px;
+}
+.sidebar__info {
+  margin-bottom: 20px;
+  
+  b {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+.sidebar__btn {
+  margin-top: 40px;
+  width: 100%;
+}

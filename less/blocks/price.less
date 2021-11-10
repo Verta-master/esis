@@ -1,0 +1,55 @@
+.price {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #fff;
+  background-image: url(../img/images/bg-service.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: rgba(246, 54, 77, 0.9);
+    border-radius: 20px;
+  }
+}
+.price__text {
+  position: relative;
+  z-index: 5;
+  padding: 40px 20px;
+  padding-top: 171px;
+  
+  .title-2 {
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 116px;
+    height: 111px;
+    background-image: url(../img/icons/clock.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.price__btn {
+  width: 100%;
+  margin-top: 45px;
+  color: #F6364D;
+}
