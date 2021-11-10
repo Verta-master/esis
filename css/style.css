@@ -2411,6 +2411,75 @@ a.pages__link:active {
   width: 100%;
   margin-top: 30px;
 }
+.faq {
+  margin-bottom: 60px;
+}
+.faq__block {
+  margin-bottom: 22px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
+          box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.faq__block--others {
+  display: none;
+}
+.faq__subtitle {
+  margin: 0;
+  padding: 30px 20px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  background-color: #F4F7F9;
+}
+.faq__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.faq__item {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #DBE1EB;
+}
+.faq__item:last-child {
+  border-bottom: 0;
+}
+.faq__title {
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+}
+.faq__title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 12px;
+  height: 7px;
+  background-image: url(../img/icons/dropdown.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 7px;
+  display: none;
+}
+.faq__title--up::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.faq__drop {
+  display: none;
+  padding-top: 10px;
+  color: #626C8B;
+}
+.faq__drop p {
+  margin: 0;
+}
 @media (min-width: 640px) {
   .header__city span {
     display: block;
@@ -3630,6 +3699,22 @@ a.pages__link:active {
     padding-top: 0;
     padding-bottom: 0;
   }
+  .faq__title::after,
+  .faq__block--others {
+    display: block;
+  }
+  .faq__subtitle,
+  .faq__list {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .faq__drop,
+  .faq__title {
+    padding-right: 75px;
+  }
+  .faq {
+    margin-bottom: 80px;
+  }
 }
 @media (min-width: 1024px) {
   .logo {
@@ -4143,6 +4228,26 @@ a.pages__link:active {
   .news__list--internal .news__img img {
     width: 100%;
     height: auto;
+  }
+  .faq {
+    margin-bottom: 100px;
+  }
+  .faq__subtitle {
+    padding: 40px;
+    font-size: 36px;
+    line-height: 49px;
+  }
+  .faq__list {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .faq__item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .faq__title {
+    font-size: 20px;
+    line-height: 27px;
   }
 }
 @media (min-width: 1440px) {
