@@ -2751,6 +2751,96 @@ a.pages__link:active {
 .result__link {
   text-decoration: none;
 }
+.sale {
+  margin-bottom: 60px;
+}
+.sale__gift {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 28px;
+  padding: 40px;
+  padding-top: 225px;
+  color: #fff;
+  background-image: url(../img/images/benefits_3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+.sale__gift::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  background-color: rgba(49, 72, 145, 0.7);
+}
+.sale__gift::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  top: 91px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 114px;
+  height: 114px;
+  background-image: url(../img/icons/action-4.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.sale__info {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+}
+.sale__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+}
+.sale__text {
+  margin: 0;
+}
+.sale__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.sale__item {
+  margin-bottom: 28px;
+  padding: 40px;
+  text-align: center;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
+          box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
+  border-radius: 20px;
+}
+.sale__icon {
+  margin-bottom: 20px;
+}
+.sale__icon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  width: auto;
+}
+.sale__subtitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+}
+.sale__btn {
+  width: 100%;
+  margin-top: 30px;
+}
 @media (min-width: 640px) {
   .header__city span {
     display: block;
@@ -3209,6 +3299,24 @@ a.pages__link:active {
   }
   .contacts__metro--red {
     border-left: 2px solid #f6364d;
+  }
+  .sale__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sale__item {
+    width: 48.5%;
+  }
+  .sale__btn {
+    width: 273px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media (min-width: 960px) {
@@ -4148,6 +4256,7 @@ a.pages__link:active {
   .steps.underline {
     padding-bottom: 80px;
   }
+  .sale,
   .news--internal {
     margin-bottom: 100px;
   }
@@ -4156,6 +4265,29 @@ a.pages__link:active {
   }
   .news__list--internal .news__item:nth-child(n + 3) {
     display: none;
+  }
+  .sale__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .sale__gift,
+  .sale__list {
+    width: 48.5%;
+  }
+  .sale__info {
+    text-align: left;
+  }
+  .sale__btn {
+    margin-left: 0;
+  }
+  .sale__gift::after {
+    left: 40px;
+    -webkit-transform: none;
+            transform: none;
   }
 }
 @media (min-width: 1280px) {
@@ -4608,6 +4740,9 @@ a.pages__link:active {
   }
   .result__list {
     padding: 40px;
+  }
+  .sale__text {
+    max-width: 520px;
   }
 }
 @media (min-width: 1440px) {
