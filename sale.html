@@ -144,7 +144,7 @@
             <div class="sale__info">
               <p class="sale__title">Получить подарок</p>
               <p class="sale__text">Мы поможем разобраться в вопросе аттестации лаборатории НК, обсудим документы и решим вопрос с выездной комисиией. А так же, поможем с другими вопросами</p>
-              <a href="#" class="btn btn--red sale__btn">Получить подарок</a>
+              <a data-fancybox="" data-src="#gift" href="javascript:;" class="btn btn--red sale__btn">Получить подарок</a>
             </div>
           </div>
           <ul class="sale__list">
@@ -264,6 +264,27 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="gift" class="modal">
+    <p class="modal__title">Получить подарок</p>
+    <p>Выберите подарок из выпадающего списка и заполните форму заявки для его получения</p>
+    <form action="#" class="form">
+      <select class="form__select">
+        <option value="" selected="" disabled="">Гарантия лучшей цены</option>
+        <option value="1">подарок 1</option>
+        <option value="2">подарок 2</option>
+        <option value="3">подарок 3</option>
+      </select>
+      <input type="email" class="form__input" placeholder="Электронная почта*">
+      <input type="tel" class="form__input" placeholder="Номер телефона">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked="">
+      <label for="checkbox" class="form__check">Я согласен на обработку <a href="#">персональных данных</a></label>
+      <p class="form__comment">Для получения подарка, воспользуйтесь промокодом, который придет на вашу электронную почту после отправки этой заявки</p>
+      <button type="submit" class="btn form__btn">Получить подарок</button>
+    </form>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
