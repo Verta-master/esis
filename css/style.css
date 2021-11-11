@@ -3685,23 +3685,23 @@ a.pages__link:active {
     display: block;
   }
   .menu__item:hover .menu__arrow {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  .menu__item:hover .menu__arrow svg {
-    fill: #F6364D;
+    background-image: url(../img/icons/dropdown-red.svg);
   }
   .logo {
     margin-right: 0;
   }
   .menu__arrow {
-    width: 9px;
+    width: 10px;
     height: 18px;
+    background-image: url(../img/icons/dropdown.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
   .menu__link,
   .menu__arrow {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
   }
   .menu__drop {
     position: absolute;
