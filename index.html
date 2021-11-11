@@ -172,7 +172,7 @@
             <option value="3">Услуга 3</option>
           </select>
           <input type="text" class="form__input" placeholder="ФИО или организация">
-          <input type="mail" class="form__input" placeholder="Электронная почта">
+          <input type="email" class="form__input" placeholder="Электронная почта">
           <input type="tel" class="form__input" placeholder="Номер телефона">
           <input type="checkbox" id="checkbox" class="form__checkbox">
           <label for="checkbox" class="form__check">Я согласен на обработку <a href="#">персональных данных</a></label>
@@ -356,7 +356,7 @@
           <div class="swiper-container team__slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide team__slide">
-                <a href="#" class="team__link">
+                <a data-fancybox data-src="#team" href="javascript:;" class="team__link">
                   <figure class="team__img">
                     <img src="img/images/team_1.jpg" alt="Наша команда">
                   </figure>
@@ -365,7 +365,7 @@
                 </a>
               </div>
               <div class="swiper-slide team__slide">
-                <a href="#" class="team__link">
+                <a data-fancybox data-src="#team" href="javascript:;" class="team__link">
                   <figure class="team__img">
                     <img src="img/images/team_2.jpg" alt="Наша команда">
                   </figure>
@@ -374,7 +374,7 @@
                 </a>
               </div>
               <div class="swiper-slide team__slide">
-                <a href="#" class="team__link">
+                <a data-fancybox data-src="#team" href="javascript:;" class="team__link">
                   <figure class="team__img">
                     <img src="img/images/team_3.jpg" alt="Наша команда">
                   </figure>
@@ -383,7 +383,7 @@
                 </a>
               </div>
               <div class="swiper-slide team__slide">
-                <a href="#" class="team__link">
+                <a data-fancybox data-src="#team" href="javascript:;" class="team__link">
                   <figure class="team__img">
                     <img src="img/images/team_4.jpg" alt="Наша команда">
                   </figure>
@@ -653,7 +653,7 @@
       <div class="wrapper">
         <p class="title-4">Сообщите нам свое впечатление о работе компании или отдельного сотрудника:</p>
         <div class="feedback__wrap">
-          <a href="#" class="feedback__btn feedback__btn--red">
+          <a data-fancybox data-src="#complaint" href="javascript:;" class="feedback__btn feedback__btn--red">
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M11.998 23.996C5.382 23.996 0 18.614 0 11.998C0 5.383 5.382 0 11.998 0C18.614 0 23.996 5.383 23.996 11.998C23.996 18.614 18.614 23.996 11.998 23.996ZM11.998 2.182C6.585 2.182 2.181 6.585 2.181 11.998C2.181 17.411 6.585 21.815 11.998 21.815C17.411 21.815 21.815 17.412 21.815 11.998C21.815 6.585 17.411 2.182 11.998 2.182ZM16.652 11.126C16.27 11.126 15.894 10.971 15.624 10.7C15.353 10.43 15.198 10.055 15.198 9.672C15.198 9.289 15.353 8.914 15.624 8.644C15.895 8.373 16.27 8.218 16.652 8.218C17.035 8.218 17.41 8.374 17.68 8.644C17.95 8.914 18.106 9.289 18.106 9.672C18.106 10.055 17.95 10.43 17.68 10.7C17.41 10.971 17.034 11.126 16.652 11.126ZM16.472 17.4C16.046 17.826 15.355 17.826 14.929 17.4C13.313 15.784 10.683 15.784 9.067 17.4C8.641 17.826 7.951 17.826 7.525 17.4C7.099 16.974 7.099 16.283 7.525 15.858C8.759 14.624 10.378 14.008 11.998 14.008C13.618 14.008 15.238 14.625 16.471 15.858C16.898 16.283 16.898 16.974 16.472 17.4ZM7.344 11.126C6.962 11.126 6.586 10.971 6.316 10.7C6.045 10.43 5.89 10.054 5.89 9.672C5.89 9.289 6.045 8.914 6.316 8.644C6.587 8.373 6.961 8.218 7.344 8.218C7.727 8.218 8.102 8.374 8.372 8.644C8.643 8.914 8.798 9.289 8.798 9.672C8.798 10.054 8.643 10.43 8.372 10.7C8.102 10.971 7.727 11.126 7.344 11.126Z"/>
             </svg>
@@ -737,6 +737,73 @@
     </div>
   </footer>
   
+  <!-- Modal windows -->
+  <div style="display: none;" id="complaint" class="modal">
+    <p class="modal__title">Пожаловаться</p>
+    <form action="#" class="form">
+      <textarea class="form__message" placeholder="Ваш комментарий"></textarea>
+      <input type="text" class="form__input" placeholder="Фамилия менеджжера (если знаете)">
+      <input type="text" class="form__input" placeholder="Ваше имя или название компании">
+      <input type="tel" class="form__input" placeholder="Контактный номер телефона">
+      <input type="email" class="form__input" placeholder="Адрес электронной почты">
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked>
+      <label for="checkbox" class="form__check">Я согласен на обработку <a href="#">персональных данных</a></label>
+      <button type="submit" class="btn form__btn">Отправить</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="team" class="modal modal--team">
+    <div class="modal__slider">
+      <div class="swiper-container modal-top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide modal__slide">
+            <img src="img/images/person.jpg" alt="Викторов Вениамин Леонидович">
+          </div>
+          <div class="swiper-slide modal__slide">
+            <img src="img/images/person.jpg" alt="Викторов Вениамин Леонидович">
+          </div>
+          <div class="swiper-slide modal__slide">
+            <img src="img/images/person.jpg" alt="Викторов Вениамин Леонидович">
+          </div>
+          <div class="swiper-slide modal__slide">
+            <img src="img/images/person.jpg" alt="Викторов Вениамин Леонидович">
+          </div>
+        </div>
+      </div>
+      <div class="modal__thumbs">
+        <div class="swiper-container modal-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide modal__thumb">
+              <img src="img/images/team_2.jpg" alt="Викторов Вениамин Леонидович">
+            </div>
+            <div class="swiper-slide modal__thumb">
+              <img src="img/images/team_2.jpg" alt="Викторов Вениамин Леонидович">
+            </div>
+            <div class="swiper-slide modal__thumb">
+              <img src="img/images/team_2.jpg" alt="Викторов Вениамин Леонидович">
+            </div>
+            <div class="swiper-slide modal__thumb">
+              <img src="img/images/team_2.jpg" alt="Викторов Вениамин Леонидович">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev modal__prev">
+          <svg width="11" height="20" viewBox="0 0 11 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44277 0.281885L0.267064 9.42095C-0.0890212 9.79694 -0.0890212 10.4069 0.267064 10.7839C0.288738 10.8064 0.316606 10.8146 0.339313 10.835L9.46135 19.7067C9.81744 20.0837 10.3769 20.1041 10.7329 19.7281C11.089 19.3521 11.089 18.7412 10.7329 18.3652L2.19611 10.1106L10.7329 1.6469C11.089 1.26988 11.089 0.65992 10.7329 0.282907C10.3769 -0.0941061 9.79886 -0.0941061 9.44277 0.281885Z"/>
+          </svg>
+        </div>
+        <div class="swiper-button-next modal__next">
+          <svg width="11" height="20" viewBox="0 0 11 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.55723 19.7181L10.7329 10.5791C11.089 10.2031 11.089 9.5931 10.7329 9.21609C10.7113 9.19361 10.6834 9.18543 10.6607 9.165L1.53865 0.293324C1.18256 -0.0836879 0.623146 -0.104121 0.267061 0.271869C-0.0890234 0.647861 -0.0890233 1.25885 0.267062 1.63484L8.80388 9.88939L0.267063 18.3531C-0.0890218 18.7301 -0.0890217 19.3401 0.267063 19.7171C0.623148 20.0941 1.20114 20.0941 1.55723 19.7181Z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <p class="title-4 modal__name">Викторов Вениамин Леонидович</p>
+    <p class="modal__position">Старший аналитик</p>
+    <p>Работа в компании-лидере – лучшая возможность для вас повысить профессиональный опыт и расширить свою компетенцию. ESIS всегда идёт на встречу своим сотрудникам в реализации новых идей и достижении высоких результатов. Здесь вы сможете не только применить свои знания и умения, но и повысить квалификацию.</p>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
@@ -745,6 +812,7 @@
   <script src="js/team-slider.js"></script>
   <script src="js/review-slider.js"></script>
   <script src="js/benefits-slider.js"></script>
+  <script src="js/modal-slider.js"></script>
 
 <!-- Sliders -->
   <script>

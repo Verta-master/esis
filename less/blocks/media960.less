@@ -223,6 +223,33 @@
     right: 0;
     border-radius: 0 30px 30px 0;
   }
+  .modal__prev,
+  .modal__next {
+    border-radius: 0;
+    border: 0;
+    top: 45%;
+    width: 30px;
+    height: 30px;
+  }
+  .modal__prev {
+    left: 0;
+    right: auto;
+  }
+  .modal__next {
+    right: 0;
+  }
+  .modal-top {
+    margin-bottom: 30px;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+  .modal__thumbs {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .modal__slider {
+    margin-top: -40px;
+  }
   .service {
     margin-bottom: 80px;
   }
@@ -769,5 +796,23 @@
   }
   .result__list {
     padding: 30px;
+  }
+  .modal {
+    padding: 40px;
+  }
+  .form__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+      width: 48%;
+      margin-top: 0;
+    }
+  }
+  .fancybox-close-small {
+    top: 0;
+    right: 0;
+    transform: none;
   }
 }

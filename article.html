@@ -460,7 +460,7 @@
     <div class="method">
       <div class="wrapper">
         <p class="title-4">Выберите методы и объекты и получите скидку</p>
-        <a href="#" class="btn btn--white method__btn">Получить скидку</a>
+        <a data-fancybox data-src="#discount1" href="javascript:;" class="btn btn--white method__btn">Получить скидку</a>
       </div>
     </div>
     
@@ -629,6 +629,63 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="discount1" class="modal">
+    <p class="modal__title">Выберите метод и объекты и получите скидку</p>
+    <img src="img/images/step1.svg" alt="Цель получения лицензии">
+    <form action="#" class="form">
+      <p class="modal__subtitle">Цель получения лицензии:</p>
+      <input type="radio" name="radio1" id="radio1" class="form__checkbox" checked>
+      <label for="radio1" class="form__check">Тендер</label>
+      <input type="radio" name="radio1" id="radio2" class="form__checkbox">
+      <label for="radio2" class="form__check">Заводская лаборатория</label>
+      <input type="radio" name="radio1" id="radio3" class="form__checkbox">
+      <label for="radio3" class="form__check">Входящий/исходящий контроль</label>
+      <input type="radio" name="radio1" id="radio4" class="form__checkbox">
+      <label for="radio4" class="form__check">Оказание лабораторных услуг для заказчика</label>
+      <input type="radio" name="radio1" id="radio5" class="form__checkbox">
+      <label for="radio5" class="form__check">Другое</label>
+      <div class="form__btns">
+        <a href="#" class="btn btn--grey">Назад</a>
+        <a href="#" class="btn btn--red">Далее</a>
+      </div>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="discount2" class="modal">
+    <p class="modal__title">Выберите метод и объекты и получите скидку</p>
+    <img src="img/images/step2.svg" alt="Срок получения лицензии">
+    <form action="#" class="form">
+      <p class="modal__subtitle">Срок получения лицензии:</p>
+      <input type="radio" name="radio2" id="radio6" class="form__checkbox" checked>
+      <label for="radio6" class="form__check">Нужно было еще вчера</label>
+      <input type="radio" name="radio2" id="radio7" class="form__checkbox">
+      <label for="radio7" class="form__check">В течение недели</label>
+      <input type="radio" name="radio2" id="radio8" class="form__checkbox">
+      <label for="radio8" class="form__check">В течение месяца</label>
+      <input type="radio" name="radio2" id="radio9" class="form__checkbox">
+      <label for="radio9" class="form__check">В течение года</label>
+      <div class="form__btns">
+        <a href="#" class="btn btn--grey">Назад</a>
+        <a href="#" class="btn btn--red">Далее</a>
+      </div>
+    </form>
+  </div>
+  
+  <div style="display: none;" id="discount3" class="modal">
+    <p class="modal__title">Вы получили скидку в 5% на услугу получения лицензии</p>
+    <p>Заполните данную форму для получения промокода</p>
+    <form action="#" class="form">
+      <input type="email" class="form__input" placeholder="Электронная почта*" required>
+      <input type="tel" class="form__input" placeholder="Номер телефона">
+      <input type="text" class="form__input" placeholder="Ваше имя">
+      <input type="checkbox" id="checkbox" class="form__checkbox" checked>
+      <label for="checkbox" class="form__check">Я согласен на обработку <a href="#">персональных данных</a></label>
+      <p class="form__comment">Для получения подарка, воспользуйтесь промокодом, который придет на вашу электронную почту после отправки этой заявки</p>
+      <button type="submit" class="btn form__btn">Получить подарок</button>
+    </form>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
