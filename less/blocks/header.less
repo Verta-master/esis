@@ -1,7 +1,13 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   box-shadow: 0px 0px 30px rgba(0, 13, 52, 0.1);
+}
+main {
+  padding-top: 131px;
 }
 .header__top {
   padding-top: 17px;
@@ -68,7 +74,7 @@
   max-width: 100%;
 }
 .logo {
-  width: 131px;
+  width: 100px;
   margin-right: auto;
 }
 .header__btn {
@@ -108,4 +114,17 @@
       .transition();
     }
   }
+}
+
+.header__tel {
+  display: block;
+  margin-left: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #F6364D;
+  background-image: url(../img/icons/call.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
 }

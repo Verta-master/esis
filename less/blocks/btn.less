@@ -43,3 +43,25 @@
   background-color: #E7EEF3;
   border-color: rgba(255,255,255,0);
 }
+.btn-top {
+  display: block;
+  position: fixed;
+  bottom: 80px;
+  left: 5px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  background-color: #DBE1EB;
+  background-image: url(../img/icons/top.svg);
+  background-repeat: no-repeat;
+  background-size: 14px 18px;
+  background-position: center;
+  border-radius: 50%;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: #2BAAE1;
+    .transition();
+  }
+}
