@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/mmenu-light.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -25,7 +26,7 @@
     </symbol>
   </svg>
 
-  <header class="header">
+  <header class="header" id="top">
     <div class="header__top">
       <div class="wrapper header__wrap">
         <div class="header__location">
@@ -60,7 +61,6 @@
           <img src="img/images/logo.svg" alt="Logo">
         </div>
         <div class="menu">
-          <button type="button" class="menu__close"></button>
           <ul class="menu__list">
             <li class="menu__item">
               <a href="#" class="menu__link">О компании</a>
@@ -110,6 +110,7 @@
             </li>
           </ul>
         </div>
+        <a href="tel:+74951203585" class="header__tel"></a>
         <div class="search">
           <button type="button" class="search__open"></button>
           <div class="search__drop">
@@ -119,10 +120,36 @@
             </form>
           </div>
         </div>
-        <button type="button" class="header__btn"></button>
+        <a href="#menu" class="header__btn"><span></span></a>
       </div>
     </div>
   </header>
+  
+  <nav id="menu">
+    <ul>
+      <li><a href="#">О компании</a></li>
+      <li class="Selected"><span>Услуги</span>
+        <ul>
+          <li><a href="#">Аттестация и аккредитация лабораторий</a></li>
+          <li><a href="#">Аттестация персонала</a></li>
+          <li><a href="#">Повышение квалификации и обучение</a></li>
+          <li><a href="#">Лицензирование</a></li>
+          <li><a href="#">Вступление в СРО</a></li>
+          <li><a href="#">Сертификация</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Акции</a></li>
+      <li><a href="#">Отзывы</a></li>
+      <li><a href="#">Форум</a></li>
+      <li><a href="#">Партнерам</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li class="menu__bottom menu__bottom--address menu__bottom--first"><a><i>г. Москва, ул. Арбат, д. 35, оф. 317</i></a></li>
+      <li class="menu__bottom menu__bottom--phone"><a href="tel:+74951203585"><i>+7 495 120-35-85</i></a></li>
+      <li class="menu__bottom menu__bottom--phone"><a href="tel:+78003336518"><i>+7 800 333-65-18</i></a></li>
+      <li class="menu__bottom menu__bottom--email"><a href="mailto:alexesis@bk.ru"><i>alexesis@bk.ru</i></a></li>
+      <li class="menu__bottom menu__bottom--email menu__bottom--last"><a href="mailto:baa@esis-info.ru"><i>baa@esis-info.ru</i></a></li>
+    </ul>
+  </nav>
   
   <main>
     <section class="promo">
@@ -733,6 +760,14 @@
     </div>
   </footer>
   
+  <a href="#top" class="btn-top" title="Наверх"></a>
+  
+  <div class="connect">
+    <a href="#" class="connect__link connect__link--form">оставить заявку</a>
+    <a href="#" class="connect__link connect__link--wa">Написать в whatsapp</a>
+    <a href="#" class="connect__link connect__link--call">Позвонить нам</a>
+  </div>
+  
   <!-- Modal windows -->
   <div style="display: none;" id="complaint" class="modal">
     <p class="modal__title">Пожаловаться</p>
@@ -809,6 +844,7 @@
   <script src="js/review-slider.js"></script>
   <script src="js/benefits-slider.js"></script>
   <script src="js/modal-slider.js"></script>
+  <script src="js/mmenu-light.js"></script>
 
 <!-- Sliders -->
   <script>
@@ -843,6 +879,25 @@
           spaceBetween: 22,
         },
       }
+    });
+  </script>
+  
+<!-- Menu -->
+  <script>
+    var menu = new MmenuLight( document.querySelector( '#menu' ), 'all');
+    var navigator = menu.navigation({
+     selectedClass: 'Selected',
+     slidingSubmenus: true,
+     theme: 'light',
+     title: 'Меню'
+    });
+    var drawer = menu.offcanvas({
+     position: 'left'
+    });
+    document.querySelector( 'a[href="#menu"]' )
+    .addEventListener( 'click', evnt => {
+      evnt.preventDefault();
+      drawer.open();
     });
   </script>
 </body>
