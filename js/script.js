@@ -1,13 +1,13 @@
 //Mobile menu
-$('.header__btn').click(function() {
-  $('.menu').addClass('menu--opened');
-  $('.menu').slideDown();
-});
-
-$('.menu__close').click(function() {
-  $('.menu').removeClass('menu--opened');
-  $('.menu').slideUp();
-})
+//$('.header__btn').click(function() {
+//  $('.menu').addClass('menu--opened');
+//  $('.menu').slideDown();
+//});
+//
+//$('.menu__close').click(function() {
+//  $('.menu').removeClass('menu--opened');
+//  $('.menu').slideUp();
+//});
 
 // Mobile search
 $('.search__open').click(function() {
