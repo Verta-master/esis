@@ -1,13 +1,8 @@
 //Mobile menu
-//$('.header__btn').click(function() {
-//  $('.menu').addClass('menu--opened');
-//  $('.menu').slideDown();
-//});
-//
-//$('.menu__close').click(function() {
-//  $('.menu').removeClass('menu--opened');
-//  $('.menu').slideUp();
-//});
+$('.close').click(function() {
+  $('body').removeClass('mm-ocd-opened');
+  $('.mm-ocd').removeClass('mm-ocd--open');
+});
 
 // Mobile search
 $('.search__open').click(function() {

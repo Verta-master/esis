@@ -1,0 +1,50 @@
+1) После футера в разметку добавить кнопку для перехода наверх:
+
+<a href="#top" class="btn-top" title="Наверх"></a>
+
+На шапке поставить id:
+
+<header class="header" id="top">
+
+Обновить файл script.js и стили style.css
+
+2) Ниже добавить блок .connect в разметку (будет виден в мобиле и на планшете).
+
+3) Перед кнопкой поиска в разметке поставить кнопку звонка:
+
+<a href="tel:+74951203585" class="header__tel"></a>
+
+4) Добавить в разметку мобильное меню (на странице index.html), заменить кнопку .header__btn на:
+
+<a href="#menu" class="header__btn"><span></span></a>
+
+подключить плагин меню:
+
+<script src="js/mmenu-light.js"></script>
+
+и его стили:
+
+<link rel="stylesheet" href="css/mmenu-light.css">
+
+и скрипт для его запуска:
+
+  <script>
+    var menu = new MmenuLight( document.querySelector( '#menu' ), 'all');
+    var navigator = menu.navigation({
+     selectedClass: 'Selected',
+     slidingSubmenus: true,
+     theme: 'light',
+     title: 'Меню'
+    });
+    var drawer = menu.offcanvas({
+     position: 'left'
+    });
+    document.querySelector( 'a[href="#menu"]' )
+    .addEventListener( 'click', evnt => {
+      evnt.preventDefault();
+      drawer.open();
+    });
+  </script>
+
+
+
